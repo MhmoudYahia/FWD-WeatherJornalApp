@@ -6,7 +6,7 @@ body {
   background-color: aquamarine;
 }
 .app {
-  max-width: 400px;
+  max-width: 576px;
   margin: auto;
 }
 .holder {
@@ -15,12 +15,13 @@ body {
 header {
   color: #6495ed;
   margin-bottom: 50px;
+  text-align: center;
 }
 label {
   display: block;
   margin-bottom: 8px;
   font-weight: 800;
-  color: blueviolet;
+  color: #6495ed;
 }
 input,
 textarea {
@@ -44,14 +45,14 @@ button {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  font-weight: 900;
+  color: #6495ed;
+  background-color: white;
 }
 button:hover,
 input:hover,
 textarea:hover {
   box-shadow: 0 0 4px 1px deepskyblue;
-}
-
-.resultes {
 }
 
 .resultes h3 {
@@ -60,7 +61,47 @@ textarea:hover {
   margin-bottom: 30px;
 }
 
-/* .resultes .resultesHolder {
+.resultes .resultesHolder > div {
+  border: 2px solid lightcyan;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px yellowgreen;
+  font-weight: bold;
+  display: flex;
 }
-.resultes .resultesHolder div {
-} */
+
+.resultes .resultesHolder div div:first-of-type {
+  flex-basis: 36%;
+  text-align: center;
+  padding: 10px;
+  background-color: bisque;
+  color: cornflowerblue;
+  font-size: 20px;
+  border-right: 2px solid lightcyan;
+}
+.resultes .resultesHolder div div:nth-of-type(2) {
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  color: ghostwhite;
+  background-color: deepskyblue;
+}
+.resultes .resultesHolder .cont div.content {
+  font-size: initial;
+}
+@media (max-width: 576px) {
+  .resultes .resultesHolder > div {
+    display: block;
+  }
+  .resultes .resultesHolder div div:first-of-type {
+    border-right: 0;
+  }
+
+  header {
+    font-size: 12px;
+  }
+  .app {
+    margin: 10px;
+  }
+}
