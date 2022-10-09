@@ -1,6 +1,6 @@
 # WeatherJornalApp
 
-## hosting
+## Hosting
 (http://127.0.0.1:1444)
 
 ## Main Idea
