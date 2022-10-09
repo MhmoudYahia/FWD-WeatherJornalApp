@@ -1,0 +1,66 @@
+* {
+  font-family: "Cairo", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: aquamarine;
+}
+.app {
+  max-width: 400px;
+  margin: auto;
+}
+.holder {
+  margin-bottom: 35px;
+}
+header {
+  color: #6495ed;
+  margin-bottom: 50px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 800;
+  color: blueviolet;
+}
+input,
+textarea {
+  width: 100%;
+  outline: 0;
+  padding: 7px;
+  border-radius: 6px;
+  border: 2px solid deepskyblue;
+}
+
+textarea {
+  height: 100px;
+}
+button {
+  margin-top: 8px;
+  outline: 0;
+  padding: 4px 10px;
+  border-radius: 7px;
+  border: 2px solid deepskyblue;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+button:hover,
+input:hover,
+textarea:hover {
+  box-shadow: 0 0 4px 1px deepskyblue;
+}
+
+.resultes {
+}
+
+.resultes h3 {
+  text-align: center;
+  color: #6495ed;
+  margin-bottom: 30px;
+}
+
+/* .resultes .resultesHolder {
+}
+.resultes .resultesHolder div {
+} */

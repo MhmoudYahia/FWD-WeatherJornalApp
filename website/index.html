@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Jornal</title>
+    <!-- all.min styles -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- normalized -->
+    <link rel="stylesheet" href="./CSS/normalized.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header><h1>Weather Jornal Application</h1></header>
+
+      <div class="holder zip">
+        <label for="zip">Zip Code:</label>
+        <input type="number" id="zip" placeholder="Enter Your Zip Code" />
+      </div>
+      <div class="holder feeling">
+        <label for="feel">What is your feeling today?</label>
+        <textarea name="textArea" id="feel" placeholder="Type Here......"></textarea>
+        <button type="submit" id="generate">Generate</button>
+      </div>
+      <hr>
+      <div class="holder resultes">
+        <h3>Most Recent Entry</h3>
+        <div class="resultesHolder">
+          <div class="date">30/5/1444</div>
+          <div class="temp">30</div>
+          <div class="content">mwwiuggb 2opfb 24o[i 24o[ 42 ihgkjr</div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
