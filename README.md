@@ -1,5 +1,8 @@
 # WeatherJornalApp
 
+##localhost
+(http://127.0.0.1:1444)
+
 ## Main Idea
 It creates an asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.
 
