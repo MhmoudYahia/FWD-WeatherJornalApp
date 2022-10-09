@@ -22,8 +22,6 @@ let projectData = {};
 //GEt-root
 app.get("/getData", (req, res) => {
   res.send(projectData);
-  console.log(projectData);
-  console.log(5);
 });
 
 //POST-root
@@ -32,7 +30,6 @@ app.post("/addData", (req, res) => {
   projectData.date = newData.date;
   projectData.temperature = (Number(newData.temperature) - 273).toFixed(2);
   projectData.userRes = newData.userRes;
-  //   console.log(projectData);
 });
 
 app.listen(port, () => {
