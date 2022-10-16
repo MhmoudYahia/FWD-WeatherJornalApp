@@ -1,6 +1,10 @@
+
+//personal api key
+const personalKey = "&appid=2ad070d9e09ca7a503ec39544c161e29&units=metric";
+
 //Global variables
 const baseUrl = "http://api.openweathermap.org/data/2.5/weather?zip=";
-const personalKey = "&appid=2ad070d9e09ca7a503ec39544c161e29";
+
 
 // Create a new date instance dynamically with JS
 let d = new Date();
@@ -70,10 +74,7 @@ const updateUI = async () => {
     document.querySelector(".temp").innerHTML =
       data.temperature + " <span><sup>o</sup>C</span>";
     document.querySelector(".content").textContent = data.userRes;
-    
   } catch (err) {
     console.log("Error", err);
   }
- 
-
 };

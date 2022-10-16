@@ -28,7 +28,7 @@ app.get("/getData", (req, res) => {
 app.post("/addData", (req, res) => {
   const newData = req.body;
   projectData.date = newData.date;
-  projectData.temperature = (Number(newData.temperature) - 273).toFixed(2);
+  projectData.temperature = Number(newData.temperature).toFixed(2);
   projectData.userRes = newData.userRes;
 });
 
